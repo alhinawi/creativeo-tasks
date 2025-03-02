@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    background-color: #2d2d31;
+    font-family: "Open Sans", serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.container {
+    position: relative
+}
+
+.button-container {
+    display: flex;
+    width: 280px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    /* إضافة مسافة بين الأزرار */
+}
+
+.button-text {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button-icon {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: background-color 0.3s ease;
+    /* إضافة تأثير الانتقال */
+}
+
+/* Search button */
+.search .button-text {
+    background-color: #009ED8;
+    transition: background-color 0.3s ease;
+}
+
+.search .button-icon {
+    background-color: #008EC2;
+    transition: background-color 0.3s ease;
+}
+
+.search:hover .button-text {
+    background-color: #007AA6;
+    /* لون أغمق عند الوقوف */
+}
+
+.search:hover .button-icon {
+    background-color: #006D94;
+    /* لون أغمق عند الوقوف */
+}
+
+.search .button-icon i {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.search:hover .button-icon i {
+    transform: scale(1.2);
+}
+
+/* Read more button */
+.read-more .button-text {
+    background-color: #FE5F55;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover .button-text {
+    background-color: #FD2E21;
+    transition: background-color 0.3s ease;
+}
+
+.read-more .button-icon {
+    background-color: #E4554C;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover .button-icon {
+    background-color: #E42A1F;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover .button-icon i {
+    animation: shake 1s ease infinite;
+    transition: animation 0.3s ease;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-3px);
+    }
+
+    50% {
+        transform: translateX(3px);
+    }
+
+    75% {
+        transform: translateX(-3px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Email button */
+.email .button-text {
+    background-color: #cc99cc;
+    transition: background-color 0.3s ease;
+}
+
+.email:hover .button-text {
+    background-color: #B64E9E;
+    transition: background-color 0.3s ease;
+}
+
+.email .button-icon {
+    background-color: #b888b8;
+    transition: background-color 0.3s ease;
+}
+
+.email:hover .button-icon {
+    background-color: #A4478F;
+    transition: background-color 0.3s ease;
+}
+
+.email .button-icon i {
+    transform: skew(0deg);
+    transition: transform 0.3s ease;
+}
+
+.email:hover .button-icon i {
+    transform: skew(-20deg);
+    transition: transform 0.3s ease;
+}
+
+/* Phone button */
+.phone .button-text {
+    background-color: #19a98c;
+    transition: background-color 0.3s ease;
+}
+
+.phone:hover .button-text {
+    background-color: #0E6C54;
+    transition: background-color 0.3s ease;
+}
+
+.phone .button-icon {
+    background-color: #15957c;
+    transition: background-color 0.3s ease;
+}
+
+.phone:hover .button-icon {
+    background-color: #0C5E4A;
+    transition: background-color 0.3s ease;
+}
+
+.phone:hover .button-icon i {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.phone:hover .button-icon i {
+    animation: rotate 0.2s ease infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    75% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(60deg);
+    }
+}
+
+/* Ball */
+.ball {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('../imgs/3.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #ff0000;
+    box-shadow:
+        0 0 15px #ff0000,
+        0 0 40px #ff0000,
+        0 0 80px #ff0000,
+        0 0 120px rgba(255, 0, 0, 0.7);
+    animation: flicker 1.5s infinite alternate ease-in-out, move 5s infinite linear;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+        box-shadow:
+            0 0 20px #ff0000,
+            0 0 50px #ff0000,
+            0 0 90px #ff0000,
+            0 0 130px rgba(255, 0, 0, 0.8);
+    }
+
+    100% {
+        opacity: 0.95;
+        box-shadow:
+            0 0 10px #ff0000,
+            0 0 30px #ff0000,
+            0 0 70px #ff0000,
+            0 0 110px rgba(255, 0, 0, 0.6);
+    }
+}
+
+@keyframes move {
+    0% {
+        top: -200px;
+        left: -200px;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        top: -200px;
+        left: 115%;
+        transform: rotate(90deg);
+    }
+
+    50% {
+        top: 100%;
+        left: 115%;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        top: 100%;
+        left: -200px;
+        transform: rotate(250deg);
+    }
+
+    100% {
+        top: -200px;
+        left: -200px;
+        transform: rotate(360deg);
+    }
+}
