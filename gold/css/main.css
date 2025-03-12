@@ -1,0 +1,19 @@
+body {
+    position: relative;
+    background-color: gold;
+    color: black; /* خلي النص واضح */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    /* margin-top: 20%; */
+    font-size: 100px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin-top: 7%;
+    margin-bottom: -5%;
+}
