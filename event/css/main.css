@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.box {
+  width: 21rem; 
+  height: 21rem; 
+  border: 0.3125rem solid #000; /* 5px ÷ 16 */
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.125rem; /* 50px ÷ 16 */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
