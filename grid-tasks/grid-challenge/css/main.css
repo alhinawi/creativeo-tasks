@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: #eee;
+}
+
+.container {
+  margin: 1.875rem auto; /* 30px -> 1.875rem */
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  grid-gap: 0.625rem; /* 10px -> 0.625rem */
+  width: 90%;
+}
+
+.container div {
+  background: #fff;
+  padding: 0.9375rem; /* 15px -> 0.9375rem */
+  line-height: 1.5;
+  position: relative;
+  border-bottom: 0.1875rem solid #f00; /* 3px -> 0.1875rem */
+}
+
+.container div::after {
+  content: '"';
+  font-size: 3.4375rem; /* 55px -> 3.4375rem */
+  position: absolute;
+  bottom: -1.875rem; /* -30px -> -1.875rem */
+  right: 0.9375rem; /* 15px -> 0.9375rem */
+  color: #B3B3B3;
+  transform: rotate(10deg);
+}
+
+p {
+  margin-bottom: 0.625rem; /* 10px -> 0.625rem */
+}
+
+.container div p:first-of-type {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.25rem; /* 20px -> 1.25rem */
+}
+
+h5 {
+  margin-bottom: 0.625rem; /* 10px -> 0.625rem */
+  color: #a8a8a9;
+}
+
+.container div:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.container div:nth-child(3) {
+  grid-area: 1 / 4 / 4 / 5;
+  background: #000;
+  color: #fff;
+}
+
+.container div:nth-child(4) {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+.container div:nth-child(5) {
+  grid-area: 2 / 2 / 3 / 4;
+  background: #000;
+  color: #fff;
+}
+
+.container div:nth-child(6) {
+  grid-area: 3 / 2 / 4 / 4;
+}
+
+.container div:nth-child(7) {
+  grid-area: 4 / 2 / 5 / 3;
+  background: #000;
+  color: #fff;
+}
