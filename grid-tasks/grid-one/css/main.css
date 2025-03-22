@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.grid {
+  background-color: #ddd;
+  padding: 1.25rem; /* 20px ÷ 16 = 1.25rem */
+  width: 50rem; /* 800px ÷ 16 = 50rem */
+  margin: 0.9375rem auto; /* 15px ÷ 16 = 0.9375rem */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3.125rem 1fr; /* 50px ÷ 16 = 3.125rem */
+  gap: 1.25rem; /* 20px ÷ 16 = 1.25rem */
+  row-gap: 1.25rem; /* 20px ÷ 16 = 1.25rem */
+  height: 25rem; /* 400px ÷ 16 = 25rem */
+}
+
+.grid div {
+  background: #607d8b;
+  position: relative;
+}
+
+.grid div::before {
+  /* content: 'Element'; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.5rem; 
+  color: #fff;
+}
+.grid div:first-child::before {
+  content: 'Element 1';
+}
+.grid div:nth-child(2)::before {
+  content: 'Element 2';
+}
+.grid div:nth-child(3)::before {
+  content: 'Element 3';
+}
+.grid div:nth-child(4)::before {
+  content: 'Element 4';
+}
+.grid div:nth-child(5)::before {
+  content: 'Element 5';
+}
+.grid div:last-child::before {
+  content: 'Element 6';
+}

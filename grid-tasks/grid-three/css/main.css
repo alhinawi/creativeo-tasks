@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    height: 100vh;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 15px auto;
+    display: grid;
+    grid-template: 1fr auto / auto 1fr 1fr auto;
+    gap: 15px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .grid > div {
+    background-color: #403F3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
