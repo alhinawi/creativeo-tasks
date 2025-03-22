@@ -1,4 +1,4 @@
-# Live DEMO 
+# LIVE DEMO 
 
 ## grid-one: https://grid-one.netlify.app/
 ## grid-two: https://grid-two.netlify.app/
