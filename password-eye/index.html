@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Eye</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="imgs/ico.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="login-title">Facebook</h1>
+        <p class="login-subtitle">Connect with friends and the world around you.</p>
+        
+        <div class="input-group">
+            <input type="text" class="input-field" placeholder="Email or phone number">
+        </div>
+        
+        <div class="input-group">
+            <input type="password" id="password" class="input-field" placeholder="Password">
+            <button class="eye-icon" id="togglePassword">
+                <!-- Default is just the eye icon when password is hidden -->
+                <i class="fa-solid fa-eye"></i>
+            </button>
+        </div>
+        
+        <button class="login-button">Log In</button>
+        
+        <a href="#" class="forgot-password">Forgot Password?</a>
+        
+        <div class="divider"></div>
+        
+        <button class="create-account">Create New Account</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
