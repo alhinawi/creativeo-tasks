@@ -1,1 +1,1 @@
-# Demo Live: hinawi-progress-bar.netlify.app
+# Demo Live: https://hinawi-progress-bar.netlify.app
