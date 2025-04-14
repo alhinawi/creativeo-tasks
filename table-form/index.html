@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="imgs/ico.png">
+    <title>Table Form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="#">
+            <h2>Table Form</h2>
+            <input type="text" name="username" id="uname" placeholder="Username">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="text" name="address" id="address" placeholder="Address">
+            <button id="addRow">Add Row</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
