@@ -199,5 +199,8 @@ nav .nav-links a:hover {
     width: 80%;
   }
 
+  body {
+    overflow: auto;
+  }
   
 }
