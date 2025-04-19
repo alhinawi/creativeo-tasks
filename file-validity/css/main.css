@@ -18,7 +18,7 @@
   form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 20px;    
   }
 
   form h2 {
@@ -42,4 +42,18 @@
 
   form #submit:hover {
     background-color: #0ae427;
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+      padding: 5px;
+    }
+    form h2 {
+      font-size: 25px;
+    }
+    form input {
+      font-size: 15px;
+    }
+   
+    
   }
