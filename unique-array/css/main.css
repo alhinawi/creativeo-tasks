@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    height: 100vh;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: orangered;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
